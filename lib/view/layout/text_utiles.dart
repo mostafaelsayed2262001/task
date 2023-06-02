@@ -12,7 +12,7 @@ class TextUtils extends StatelessWidget {
   final TextOverflow? overFlow;
   final int? maxLines;
 
-  const TextUtils({required this.text,
+  const TextUtils( {required this.text,
     this.fontWeight,
     this.fontSize,
     this.color,
@@ -27,12 +27,12 @@ class TextUtils extends StatelessWidget {
     return Text(
       text,
       maxLines: maxLines ,
-      style: GoogleFonts.inter(
+      style: GoogleFonts.cairo(
         textStyle: TextStyle(
             decoration: underline,
             fontSize: fontSize ?? 18,
             fontWeight: fontWeight ?? FontWeight.normal,
-            color:color?? Colors.white,
+            color:color?? Colors.black,
             overflow: TextOverflow.ellipsis),
       ),
     );

@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 26),
             height: 5,
-            width: 70,
+            width: mq.width*0.2,
             decoration: BoxDecoration(
                 color: HexColor('#D9D9D9'),
                 borderRadius: BorderRadius.circular(5)),
@@ -48,8 +48,8 @@ class HomeScreen extends StatelessWidget {
             color: kColor,
             fontSize: 12,
           ),
-          const SizedBox(
-            height: 5,
+           SizedBox(
+            height: mq.height*0.001,
           ),
           TextUtils(
             text: 'avoid shake to get results quickly',
@@ -60,8 +60,8 @@ class HomeScreen extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: mq.height * 0.06),
             child: Column(children: [
               Image.asset('images/qrscan.png', height: mq.height * 0.2),
-              const SizedBox(
-                height: 20,
+               SizedBox(
+                height: mq.height*0.01,
               ),
               TextUtils(
                 text: 'Scanning Code...',

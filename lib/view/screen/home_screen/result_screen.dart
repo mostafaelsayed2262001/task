@@ -63,18 +63,17 @@ class ResultScreen extends StatelessWidget {
           fontSize: 12,
         ),
         SizedBox(
-          height: mq.height * 0.07,
+          height: mq.height * 0.03,
         ),
         cardWidget(mq),
         cardWidget(mq),
         cardWidget(mq),
-        SizedBox(
-          height: mq.height * 0.07,
-        ),
+        Spacer(),
         ButtonWidget(
           text: 'Send',
           onPressed: () {},
         ),
+        Spacer()
       ]),
     ));
   }
